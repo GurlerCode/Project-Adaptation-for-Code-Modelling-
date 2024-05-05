@@ -1,9 +1,10 @@
-# Introduction
+# Project Adaptation for Code Modeling models
+## Introduction
 This project aims to enhance Language Model (LM) performance on underrepresented programming languages, focusing specifically on Kotlin. 
 The task involves adapting a pre-trained Transformer model for code completion in Kotlin and evaluating its performance. 
 The project follows a structured approach, including dataset creation, model adaptation, fine-tuning, and evaluation.
 
-# Task Overview
+## Task Overview
 The main objectives of the project are as follows:
 
 1. Pick a large open-source project, written mostly in Kotlin, e.g. Kotlin
@@ -12,7 +13,7 @@ The main objectives of the project are as follows:
 4. Fine-tune the model on the Kotlin dataset you have collected
 5. Report the changes of quality on both Kotlin and Python data after the finetuning
 
-# Solution Overview
+## Solution Overview
 The project solution involves the following steps:
 
 1. Dataset Creation: Kotlin code is extracted from the **Ktor framework** to create a comprehensive dataset for code completion tasks.
@@ -21,11 +22,11 @@ The project solution involves the following steps:
 4. Fine-Tuning: The adapted model is fine-tuned on the Kotlin dataset using the AdamW optimizer and a linear scheduler. Training and validation losses are monitored during the fine-tuning process.
 5. Evaluation: The performance of the fine-tuned model is evaluated on the Kotlin test dataset by calculating the average loss.
 
-# Challenges Faced
+## Challenges Faced
 During the fine-tuning process, challenges were encountered, particularly in obtaining meaningful training and validation losses. 
 Additionally, limitations in the evaluation procedure hindered the accurate assessment of the model's performance.
 
-# Next Steps
+## Next Steps
  - Hyperparameter Tuning: Experiment with different hyperparameter configurations to improve training stability and convergence.
  - Evaluation Enhancement: Implement comprehensive evaluation metrics to assess the model's performance accurately.
  - Debugging and Troubleshooting: Investigate and resolve potential issues in the training pipeline to ensure reliable results.
