@@ -17,7 +17,7 @@ The main objectives of the project are as follows:
 The project solution involves the following steps:
 
 1. Dataset Creation: Kotlin code is extracted from the **Ktor framework** to create a comprehensive dataset for code completion tasks.
-2. Model Adaptation: The pre-trained CodeBERT model is selected and adapted for Kotlin code completion. Tokenization and model loading are performed using Hugging Face's Transformers library.
+2. Model Adaptation: **The pre-trained CodeBERT model** is selected and adapted for Kotlin code completion. Tokenization and model loading are performed using Hugging Face's Transformers library.
 3. Data Preprocessing: The Kotlin dataset is tokenized using the CodeBERT tokenizer, split into training, validation, and test sets, and prepared for training using PyTorch DataLoader.
 4. Fine-Tuning: The adapted model is fine-tuned on the Kotlin dataset using the AdamW optimizer and a linear scheduler. Training and validation losses are monitored during the fine-tuning process.
 5. Evaluation: The performance of the fine-tuned model is evaluated on the Kotlin test dataset by calculating the average loss.
